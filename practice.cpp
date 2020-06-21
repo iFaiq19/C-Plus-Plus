@@ -3,16 +3,16 @@ using namespace std;
 
 
 // Hello World
-
+/***
 int main()
 {
     cout<<"Hello World"<<endl;
     return 0;
 }
-
+***/
 
 //Variables
-
+/***
 int main()
 {
     string name;
@@ -25,9 +25,10 @@ int main()
     cout << "I am " << age << " years old" << endl;
     return 0;
 }
+*///
 
 //Data Types
-
+/***
 int main()
 {
     char grade = 'A';
@@ -42,5 +43,21 @@ int main()
     cout << "Marks: " << marks << endl;  
     cout << "Double can store more decimal points than float " << nothing << endl;
     cout << "Passed the exam? (1 for yes, 0 for no): " << cleared;
+    return 0;
+}
+*///
+
+//Working with strings 
+
+int main()
+{
+    string str = "NED University of Engineering & Technology";
+    string strsub;
+    cout << "Length of string: " << str.length() << endl;
+    cout << "The first character of the string is: " << str[0] << endl; 
+    cout << "The index value of & is: " << str.find('&') << endl;
+    cout << "The first 3 characters: " << str.substr(0, 3) << endl;
+    strsub = str.substr(0, 14);
+    cout << strsub << endl;
     return 0;
 }
