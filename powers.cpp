@@ -12,6 +12,7 @@ int main()
     cin >> num;
 
     powers(num);
+    return 0;
 }
 
 //-----------------------------------
