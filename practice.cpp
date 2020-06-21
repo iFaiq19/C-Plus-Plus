@@ -28,4 +28,16 @@ int main()
 *///
 
 //Data Types
-
+/***
+int main()
+{
+    char grade = 'A';
+    string name = "Faiq";
+    int per_round = 79;
+    float marks = 175.25;
+    cout << "Student: " << name << endl;
+    cout << "Grade: " << grade << endl;
+    cout << "Percentage: " << per_round << endl;
+    cout << "Marks: " << marks << endl;  
+}
+*///
