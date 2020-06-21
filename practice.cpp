@@ -3,16 +3,16 @@ using namespace std;
 
 
 // Hello World
-/***
+
 int main()
 {
     cout<<"Hello World"<<endl;
     return 0;
 }
-***/
+
 
 //Variables
-/***
+
 int main()
 {
     string name;
@@ -25,7 +25,6 @@ int main()
     cout << "I am " << age << " years old" << endl;
     return 0;
 }
-*///
 
 //Data Types
 
@@ -43,5 +42,5 @@ int main()
     cout << "Marks: " << marks << endl;  
     cout << "Double can store more decimal points than float " << nothing << endl;
     cout << "Passed the exam? (1 for yes, 0 for no): " << cleared;
-    return 0
+    return 0;
 }
