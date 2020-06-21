@@ -22,7 +22,6 @@ int main()
          << "int;    system dependent" << endl
          << "long;  -2,147,483,648 to 2,147,48,647" << endl;
     starline('-', 60);         //call to function
-    getchar();
     return 0;
 }
 //---------------------------------------------------------
