@@ -11,4 +11,15 @@ int main()
 }
 ***/
 
- 
+//Triangle
+
+int main()
+{
+    cout << "     /|" << endl;
+    cout << "    / |" << endl;
+    cout << "   /  |" << endl;
+    cout << "  /   |" << endl;
+    cout << " /    |" << endl;
+    cout << "/_____|" << endl;
+    return 0;
+}
