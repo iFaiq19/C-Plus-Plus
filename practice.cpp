@@ -48,7 +48,7 @@ int main()
 *///
 
 //Working with strings 
-
+/***
 int main()
 {
     string str = "NED University of Engineering & Technology";
@@ -60,4 +60,12 @@ int main()
     strsub = str.substr(0, 14);
     cout << strsub << endl;
     return 0;
+}
+***/
+
+//Working with numbers
+
+int main()
+{
+    
 }
