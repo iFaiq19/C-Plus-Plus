@@ -19,14 +19,14 @@ int main()
     string name;
     int age;
     cout << "Enter your name: ";
-    cin >> name;
+    getline(cin, name);
     cout << "Enter your age: ";
     cin >> age;
     cout << "My name is " << name << endl;
     cout << "I am " << age << " years old" << endl;
     return 0;
 }
-*///
+***/
 
 //Data Types
 /***
@@ -93,3 +93,4 @@ int main()
     return 0;
 }
 ***/
+
