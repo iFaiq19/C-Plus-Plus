@@ -3,6 +3,8 @@
 #include <iomanip>
 using namespace std;
 
+//-----------------Different Type Of Arguments-------------------
+/***
 int square(int number) {
     return number * number;
 };          //The function "square" takes an int input
@@ -23,4 +25,42 @@ int main ()
     cout << square(UInt) << " and " << square(UDouble) << endl;
     
     return 0;
+}
+
+***/
+
+//---------------------Different Number of Parameters/Arguments-------------
+
+void printchars();
+void printchars(char ch);
+void printchars(char ch, int n);
+
+int main ()
+{
+    printchars();      //Prints the default '*' 40 times
+    printchars('/');        //Prints '/' 70 times
+    printchars('=', 60);        //Print '=' 60 times
+    
+    return 0;
+}
+
+void printchars()
+{
+    for (int i=0; i<40; i++)
+        cout << '*';
+    cout << endl;
+}
+
+void printchars(char ch)
+{
+    for (int i=0; i<70; i++)
+        cout << ch;
+    cout << endl;
+}
+
+void printchars(char ch, int n)
+{
+    for (int i=0; i<n; i++)
+        cout << ch;
+    cout << endl;
 }
