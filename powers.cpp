@@ -3,28 +3,19 @@
 
 using namespace std;
 
-void powers(int num);
+void powers()
+{
+    for (int i=1; i <6; i++)
+    {
+        cout << "The square of " << i << " is " << pow(i, 2) << endl
+             << "The cube of " << i << " is " << pow(i, 3) << endl
+             << "The fourth power of " << i << " is " << pow(i, 4) << endl
+             << "\n\n";
+    };
+}
 
 int main()
 {
-    int num;
-    cout << "Enter your number: ";
-    cin >> num;
-
-    powers(num);
+    powers();
     return 0;
-}
-
-//-----------------------------------
-
-void powers(int num)
-{
-    int sq, cube, fourth;
-    sq = pow(num, 2);
-    cube = pow(num, 3);
-    fourth = pow(num, 4);
-
-    cout << "The square of your number is: " << sq << endl
-         << "The cube of your number is: " << cube << endl
-         << "The fourth power of your number is: " << fourth << endl;
 }
