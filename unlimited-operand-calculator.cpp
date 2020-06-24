@@ -17,7 +17,7 @@ int main() {
     for (int j=1; j<=operands ; j++) {
         
         int operand;
-        cout << "Enter Operand: ";
+        cout << "Enter Operand (number): ";
         cin >> operand;
 
         if (j == 1) {
@@ -40,7 +40,7 @@ int main() {
         }
         
         if (j != operands) {
-            cout << "Enter Operator: ";
+            cout << "Enter Operator (+, -, *, /): ";
             cin >> operate;
         }
     }
