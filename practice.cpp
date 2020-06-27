@@ -21,7 +21,7 @@ class Distance
             }
         void display()  //to show output
             {
-                cout << feets << "\'." << inches << "\"."; 
+                cout << feets << "\' " << inches << "\"";
             }
         void add_dist(Distance, Distance);  //declaration
 };
@@ -42,10 +42,10 @@ void Distance::add_dist(Distance d1, Distance d2)  //to add d1 and d2
 //---------------------------------------------------------------
 int main()
 {
-    Distance dist1, dist3;  //define two lengths
-    Distance dist2(11,6.25);  //define and initialize dist2
+    Distance dist2, dist3;  //define two lengths
+    Distance dist1(16, 11.25);  //define and initialize dist2
 
-    dist1.get_dist();  //take input for dist1
+    dist2.get_dist();  //take input for dist1
     dist3.add_dist(dist1,dist2);  //give value to dist3 by add dist1(input) and dist2(constructor values)
  
     cout << "\ndist1: "; dist1.display();  //display distances
