@@ -26,7 +26,7 @@ class Distance
         void add_dist(Distance, Distance);  //declaration
 };
 
-//---------------------------------------------------------
+//---------------------------------------------------------------
 void Distance::add_dist(Distance d1, Distance d2)  //to add d1 and d2
 {
     inches = d1.inches + d2.inches;  //add inches
@@ -39,7 +39,7 @@ void Distance::add_dist(Distance d1, Distance d2)  //to add d1 and d2
     feets += d1.feets + d2.feets;  //add feets
 };
 
-//---------------------------------------------------------
+//---------------------------------------------------------------
 int main()
 {
     Distance dist1, dist3;  //define two lengths
