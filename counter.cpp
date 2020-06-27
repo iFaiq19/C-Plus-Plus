@@ -9,8 +9,11 @@ class counter
         unsigned int count;
     
     public:
-        counter() : count(0)  //constructor
-        {cout << "Calling constructor\nI'm the constructor\n";}
+        counter() //constructor
+        {   
+            count = 0; 
+            cout << "Calling constructor\nI'm the constructor\n";
+        }
         void inc_count()
         {count++;}
         void inc_count(int n)
