@@ -11,46 +11,55 @@ class Operator
         void get_count()
         {cout << count;}
 
+        Operator(int c): count(c)
+        {   }
+
         Operator operator ++ (int n)  //eg c1++
         {count +=1 ;
-        Operator temp;
-        temp.count = count;
-        return temp;
+        // Operator temp;
+        // temp.count = count;
+        // return temp;
+        return Operator(count);
         }
 
         Operator operator -- (int n)  //eg c1--
         {count -=1 ;
-        Operator temp;
-        temp.count = count;
-        return temp;
+        // Operator temp;
+        // temp.count = count;
+        // return temp;
+        return Operator(count);
         }
 
         Operator operator += (int n)  //eg c1 += 25
         {count +=n ;
-        Operator temp;
-        temp.count = count;
-        return temp;
+        // Operator temp;
+        // temp.count = count;
+        // return temp;
+        return Operator(count);
         }
 
         Operator operator -= (int n)  //eg c1 -= 25
         {count -= n ;
-        Operator temp;
-        temp.count = count;
-        return temp;
+        // Operator temp;
+        // temp.count = count;
+        // return temp;
+        return Operator(count);
         }
 
         Operator operator + (int n)  //eg c1 - 25
         {count += n ;
-        Operator temp;
-        temp.count = count;
-        return temp;
+        // Operator temp;
+        // temp.count = count;
+        // return temp;
+        return Operator(count);
         }
 
         Operator operator - (int n)  //eg c1 - 25
         {count -= n ;
-        Operator temp;
-        temp.count = count;
-        return temp;
+        // Operator temp;
+        // temp.count = count;
+        // return temp;
+        return Operator(count);
         }
 };
 
