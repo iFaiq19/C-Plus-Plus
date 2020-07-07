@@ -1,4 +1,5 @@
 #include <iostream>
+#include <conio.h>
 using namespace std;
 
 class Count
@@ -25,6 +26,12 @@ class Count
 class CountDec : public Count
 {
     public:
+        CountDec() : Count()
+        {   }
+
+        CountDec(int n) : Count(n)
+        {   }
+
         Count operator -- (int n)
         {return Count(count -= 1);}
 
@@ -34,12 +41,22 @@ class CountDec : public Count
 
 int main()
 {
-    CountDec number;
-    cout << "Count: " << number.get_count();
+    CountDec number1, number2(66);
+    cout << "Number 1: " << number1.get_count() << endl;
+    cout << "Number 2: " << number2.get_count() << endl;
 
-    number++; number++; number+=4;
-    cout << "\nCount: " << number.get_count();
+    number1++; number1++; number1+=4;
+    cout << "Number 1 (after increment): " << number1.get_count() << endl;
 
-    number--; number-=3;
-    cout << "\nCount: " << number.get_count();
+    number1--; number1-=3;
+    cout << "Number 1 (after decrement): " << number1.get_count() << endl;
+
+    number2++;number2+=5;
+    cout << "Number 2 (after increment): " << number2.get_count() << endl;
+
+    CountDec number3 = number2;
+    cout << "Number 3: " << number2.get_count() << endl;
+
+    getch();
+    return 0;
 }
