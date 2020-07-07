@@ -61,6 +61,12 @@ class Operator
         // return temp;
         return Operator(count);
         }
+
+        // for saving the count in ordinary varible, we will use this fucntion
+
+        int returnValue(){
+            return count;
+        }
 };
 
 int main()
@@ -75,4 +81,9 @@ int main()
     c2 = c1 + 300;  // 398
     cout << "\nC1:\t"; c1.get_count();  // 98
     cout << "\nC2:\t"; c2.get_count();  // 398
+
+    // creating a ordinary variable and returning the value of count to save in it;
+    int ordinaryVariable = c1.returnValue();
+    cout << "The Value of Count is: " << ordinaryVariable << endl;
+
 }
