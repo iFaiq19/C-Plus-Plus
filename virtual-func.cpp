@@ -1,49 +1,73 @@
 #include <iostream>
 using namespace std;
 
-class father
+class family
 {
     protected:
         int age;
     public:
-        father(int n) : age(n)
+        family(int n) : age(n)
         {   }
-        virtual void show()
-        {cout << "I am Father and my age is..."<< age << endl;}
+        virtual void show() = 0;
 };
 
-class son : public father
+class father : public family
 {
     public:
-        son(int n) : father(n)
+        father(int n) : family(n)
         {   }
         void show()
-        {cout << "I am Son and my age is..."<< age << endl;}
+        {cout << "I am Father and my age is: "<< age << endl;}
 };
 
-class daughter : public father
+class mother : public family
 {
     public:
-        daughter(int n) : father(n)
+        mother(int n) : family(n)
         {   }
         void show()
-        {cout << "I am Daughter and my age is..."<< age << endl;}
+        {cout << "I am Mother and my age is: "<< age << endl;}
+};
+
+
+class son : public family
+{
+    public:
+        son(int n) : family(n)
+        {   }
+        void show()
+        {cout << "I am Son and my age is: "<< age << endl;}
+};
+
+class daughter : public family
+{
+    public:
+        daughter(int n) : family(n)
+        {   }
+        void show()
+        {cout << "I am Daughter and my age is: "<< age << endl;}
 };
 
 int main()
 {
+    father ft(35);
+    mother mt(33);
     son s1(10);
     daughter d1(8);
-    father f1(35);
+    son s2(5);
 
-    father* ptr[3];
-    ptr[0]=&f1;
-    ptr[1]=&s1;
-    ptr[2]=&d1;
+    family* ptr[5];
+    ptr[0]=&ft;
+    ptr[1]=&mt;
+    ptr[2]=&s1;
+    ptr[3]=&d1;
+    ptr[4]=&s2;
 
     ptr[0]->show();
     ptr[1]->show();
     ptr[2]->show();
+    ptr[3]->show();
+    ptr[4]->show();
 
     return 0;
 }
