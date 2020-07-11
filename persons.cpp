@@ -84,6 +84,5 @@ int main()
         if (perarr[j]->isoutstanding())
             cout << "This person is outstanding" << endl;
     };
-
     return 0;
 }
