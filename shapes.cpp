@@ -6,7 +6,7 @@ class shape
     protected:
         double length, width;
     public:
-        void get_data()
+        virtual void get_data()
         {
             cout << "Enter length/base: "; cin >> length;
             cout << "Enter height/width: "; cin >> width;
@@ -18,6 +18,12 @@ class shape
 class triangle : public shape
 {
     public: 
+        void get_data()
+        {
+            cout << "-----For Triangle-----" << endl;
+            shape::get_data();
+        }
+
         void display_area()
         {
             cout << "The area of triangle with height= " << width << " and base= " << length << " is= "
@@ -28,6 +34,11 @@ class triangle : public shape
 class rectangle : public shape
 {
     public: 
+        void get_data()
+        {
+            cout << "-----For Rectangle-----" << endl;
+            shape::get_data();
+        }
         void display_area()
         {
             cout << "The area of rectangle with width= " << width << " and length= " << length << " is= "
