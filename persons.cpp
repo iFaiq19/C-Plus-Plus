@@ -78,7 +78,7 @@ int main()
         cin >> choice;
     }while (choice=='y');
 
-    for (int j=0; j<n; j++)
+    for (int j=0; j<=n; j++)
     {
         perarr[j]->displayname();
         if (perarr[j]->isoutstanding())
