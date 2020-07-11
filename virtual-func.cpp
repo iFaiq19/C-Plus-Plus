@@ -36,14 +36,14 @@ int main()
     daughter d1(8);
     father f1(35);
 
-    father* ptr=&s1;
-    ptr->show();
+    father* ptr[3];
+    ptr[0]=&f1;
+    ptr[1]=&s1;
+    ptr[2]=&d1;
 
-    ptr=&d1;
-    ptr->show();
-
-    ptr=&f1;
-    ptr->show();
+    ptr[0]->show();
+    ptr[1]->show();
+    ptr[2]->show();
 
     return 0;
 }
