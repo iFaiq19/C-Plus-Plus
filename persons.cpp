@@ -72,17 +72,19 @@ int main()
         else
             perarr[n] = new professor;
 
-        perarr[n++]->getdata();
+        perarr[n]->getdata();
+        n++;
 
         cout << "Do you want to enter another?(y/n) ";
         cin >> choice;
     }while (choice=='y');
-
+    cout << "----------------------------------------------" << endl;
     for (int j=0; j<=n; j++)
     {
         perarr[j]->displayname();
         if (perarr[j]->isoutstanding())
             cout << "This person is outstanding" << endl;
     };
+    cout << "----------------------------------------------" << endl;
     return 0;
 }
