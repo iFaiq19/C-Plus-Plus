@@ -35,7 +35,7 @@ class student : public persons
         cout << "GPA: " << gpa << endl;
     }
     bool isoutstanding()
-    {return (gpa>=3.5) ? true:false;}
+    {return (gpa>3.5) ? true:false;}
 };
 
 class professor : public persons
@@ -55,7 +55,7 @@ class professor : public persons
         cout << "Number of publications: " << publications << endl;
     }
     bool isoutstanding()
-    {return (publications>=100) ? true:false;}
+    {return (publications>100) ? true:false;}
 };
 
 int main()
