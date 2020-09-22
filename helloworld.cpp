@@ -1,8 +1,22 @@
 #include <iostream>
 using namespace std;
 
-int main()
+class A{
+    private:
+    int x;
+    public:
+    A(int _x) {x = _x;}
+    int get() {return x;}
+};
+
+class B {
+    static A a;
+    public:
+    static int get(){return a.get();}
+};
+int main(void)
 {
-    cout<<"Hello World"<<endl;
+    B b;
+    cout << b.get();
     return 0;
 }
